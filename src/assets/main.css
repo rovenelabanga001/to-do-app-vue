@@ -7,11 +7,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 header {
-  border-bottom: 2px solid rgb(251, 218, 251);
+  border-bottom: 2px solid gray;
 }
 header h3.date {
   text-align: center;
-  color: rgb(232, 2, 232);
 }
 .app-content {
   width: 100%;
@@ -33,7 +32,7 @@ header h3.date {
   width: 80%;
   height: 10vh;
   padding: 20px;
-  box-shadow: 3px 2px 4px 4px rgb(251, 218, 251);
+  box-shadow: 3px 2px 4px 4px rgb(184, 183, 183);
 }
 .task-input div {
   display: flex;
@@ -44,6 +43,7 @@ header h3.date {
   border-radius: 5px;
   outline: none;
   height: 2rem;
+  padding: 0 5px;
 }
 .task-input div input#add-task::placeholder {
   color: black;
@@ -62,7 +62,7 @@ header h3.date {
   align-items: flex-start;
   width: 80%;
   padding: 15px;
-  box-shadow: 3px 2px 4px 4px rgb(251, 218, 251);
+  box-shadow: 3px 2px 4px 4px rgb(184, 183, 183);
   display: flex;
   flex-direction: column;
 }
@@ -82,15 +82,17 @@ header h3.date {
   justify-content: center;
   align-items: center;
   column-gap: 30px;
-  color: rgb(232, 2, 232);
 }
 .tasks-container ul li button {
   border: none;
   background: none;
   font-size: 15px;
-  color: rgb(232, 2, 232);
+  color: red;
   position: absolute;
   right: 40px;
+}
+.tasks-container p {
+  align-self: center;
 }
 .done {
   text-decoration: line-through;
